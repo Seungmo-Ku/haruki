@@ -120,8 +120,8 @@ export default function ResultsPage() {
                         <div key={type} className='w-full'>
                             {/* 레이블 (타입, 인원, %) */}
                             <div className='flex justify-between mb-1'>
-                                <span className='text-base font-medium text-gray-700'>{resultIntoKorean(type as ResultType)}</span>
-                                <span className='text-base font-bold text-black'>{count}명 ({totalPercentage}%)</span>
+                                <span className='text-base font-medium text-white'>{resultIntoKorean(type as ResultType)}</span>
+                                <span className='text-base font-bold text-white'>{count}명 ({totalPercentage}%)</span>
                             </div>
                             {/* 막대 그래프 바 */}
                             <div className='w-full bg-gray-200 rounded-full h-6 overflow-hidden'>
@@ -152,8 +152,8 @@ export default function ResultsPage() {
                     return (
                         <div key={type} className='w-full'>
                             <div className='flex justify-between mb-1'>
-                                <span className='text-base font-medium text-gray-700'>{label}</span>
-                                <span className='text-base font-bold text-black'>{count}명 ({totalPercentage}%)</span>
+                                <span className='text-base font-medium text-white'>{label}</span>
+                                <span className='text-base font-bold text-white'>{count}명 ({totalPercentage}%)</span>
                             </div>
                             <div className='w-full bg-gray-200 rounded-full h-6 overflow-hidden'>
                                 <div
@@ -170,9 +170,9 @@ export default function ResultsPage() {
     }
     
     return (
-        <div className='w-full h-full p-6 bg-white'>
+        <div className='w-full h-full p-6 bg-black'>
             <div className='flex justify-between items-center mb-6'>
-                <h1 className='text-3xl font-bold text-black'>📊 실시간 집계 결과</h1>
+                <h1 className='text-3xl font-bold text-white'>📊 실시간 집계 결과</h1>
                 <button
                     onClick={fetchStats}
                     disabled={isLoading}
@@ -181,20 +181,20 @@ export default function ResultsPage() {
                     {isLoading ? '...' : '수동 새로고침'}
                 </button>
             </div>
-            <p className='text-lg text-gray-600 mb-6 pb-4'>
-                총 <strong className='text-xl text-black'>{totalCount}</strong>명이 참여했습니다.
+            <p className='text-lg text-white mb-6 pb-4'>
+                총 <strong className='text-xl text-white'>{totalCount}</strong>명이 참여했습니다.
             </p>
             
             {/* [NEW] 2번 그래프: 안정형 vs 그 외 (데이터가 있을 때만 렌더링) */}
             {totalCount > 0 && (
                 <>
-                    <h2 className='text-2xl font-semibold text-black mt-10 mb-4 pt-4 border-t'>안정형 vs 그 외</h2>
+                    <h2 className='text-2xl font-semibold text-white mt-10 mb-4 pt-4 border-t'>안정형 vs 그 외</h2>
                     {renderBinaryGraph()}
                 </>
             )}
             
             {/* [NEW] 1번 그래프: 유형별 상세 */}
-            <h2 className='text-2xl font-semibold text-black mb-4 border-t mt-6 pt-4'>유형별 상세</h2>
+            <h2 className='text-2xl font-semibold text-white mb-4 border-t mt-6 pt-4'>유형별 상세</h2>
             {renderContent()}
         </div>
     )
