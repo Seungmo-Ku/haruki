@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "하루키 4조 설문조사"
+  title: "하루키 4조 나를 알아보는 시간"
 };
 
 export default function RootLayout({

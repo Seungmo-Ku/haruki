@@ -164,13 +164,13 @@ export default function Home() {
     
     if (result) {
         return (
-            <div className='w-full h-full py-6 px-2 bg-white flex flex-col items-center justify-start'>
-                <h2 className='text-lg text-black'>당신의 애착 유형은...</h2>
-                <h1 className='text-4xl font-bold text-blue-600 my-4'>{resultIntoKorean}</h1>
+            <div className='w-full h-full py-6 px-2 bg-black flex flex-col items-center justify-start'>
+                <h2 className='text-lg text-white'>당신의 애착 유형은...</h2>
+                <h1 className='text-4xl font-bold text-red-500 my-4'>{resultIntoKorean}</h1>
                 {/* 여기에 유형별 설명 추가 */}
                 {/* <p>당신은 어쩌구 저쩌구...</p> */}
                 <button
-                    className='mt-6 px-4 py-2 bg-black rounded-lg font-semibold text-white'
+                    className='mt-6 px-4 py-2 bg-white rounded-lg font-semibold text-black'
                     onClick={() => {
                         setResult(null)
                         setAnswers({})
@@ -184,30 +184,30 @@ export default function Home() {
     }
     
     return (
-        <div className='w-full h-full py-6 px-2 bg-white flex flex-col items-center justify-start'>
+        <div className='w-full h-full py-6 px-2 bg-black text-white flex flex-col items-center justify-start'>
             {/* 프로그레스 바 */}
             <div className='w-full bg-gray-200 rounded-full h-2.5 mb-2'>
                 <div
-                    className='bg-blue-600 h-2.5 rounded-full'
+                    className='bg-pink-400 h-2.5 rounded-full'
                     style={{ width: `${progressPercent}%` }} // 이 부분만 인라인 스타일
                 ></div>
             </div>
-            <p className='text-center text-sm text-gray-500 mb-6'>{currentStep + 1} / {totalQuestions}</p>
+            <p className='text-center text-sm text-white mb-6'>{currentStep + 1} / {totalQuestions}</p>
             
             {/* 질문 */}
-            <h2 className='text-xl font-semibold text-center min-h-[120px] my-6 text-black break-keep'>
+            <h2 className='text-xl font-semibold text-center min-h-[120px] my-6 text-white break-keep'>
                 {currentQuestion.text}
             </h2>
             
             {/* 선택지 (1점 ~ 5점) */}
             <div className='w-full max-w-[500px] flex justify-between items-center my-8 px-4'>
-                <span className='text-12-regular text-gray-500'>전혀 아님</span>
+                <span className='text-12-regular text-white'>전혀 아님</span>
                 {options.map((value) => (
                     <button
                         key={value}
                         className={`w-10 h-10 rounded-full font-bold transition-colors
                                 ${answers[currentQuestion.id] === value
-                                  ? 'bg-blue-600 text-white'
+                                  ? 'bg-pink-600 text-white'
                                   : 'bg-gray-200 hover:bg-gray-300 text-gray-500'}
                             `}
                         onClick={() => handleSelect(value)}
@@ -215,13 +215,13 @@ export default function Home() {
                         {value}
                     </button>
                 ))}
-                <span className='text-sm text-gray-500'>매우 공감</span>
+                <span className='text-sm text-white'>매우 공감</span>
             </div>
             
             {/* 네비게이션 버튼 */}
             <div className='flex w-full max-w-[500px] justify-between mt-10'>
                 <button
-                    className='px-6 py-2 border rounded-lg font-semibold disabled:opacity-50 bg-black text-white'
+                    className='px-6 py-2 border rounded-lg font-semibold disabled:opacity-50 bg-white text-black'
                     onClick={handlePrev}
                     disabled={currentStep === 0}
                 >
@@ -230,7 +230,7 @@ export default function Home() {
                 
                 {currentStep < totalQuestions - 1 ? (
                     <button
-                        className='px-6 py-2 border rounded-lg font-semibold disabled:opacity-50 bg-black text-white'
+                        className='px-6 py-2 border rounded-lg font-semibold disabled:opacity-50 bg-white text-black'
                         onClick={handleNext}
                         disabled={!answers[currentQuestion.id]}
                     >
