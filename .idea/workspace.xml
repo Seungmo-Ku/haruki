@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b8a7586-917f-487e-885a-c2c585731802" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/public/qrcode.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/results/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/results/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/submit/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/submit/route.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +102,7 @@
       <workItem from="1764070486558" duration="313000" />
       <workItem from="1764074434327" duration="1729000" />
       <workItem from="1764599015684" duration="201000" />
-      <workItem from="1764601818564" duration="156000" />
+      <workItem from="1764601818564" duration="927000" />
     </task>
     <servers />
   </component>
