@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b8a7586-917f-487e-885a-c2c585731802" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/public/qrcode.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/results/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/results/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +64,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.Next.js: 서버 측">
     <configuration name="Next.js: 클라이언트 측에서 디버그" type="JavascriptDebugType" uri="http://localhost:3000/">
       <method v="2" />
@@ -96,7 +101,9 @@
       <workItem from="1762861301637" duration="507000" />
       <workItem from="1762861812823" duration="6785000" />
       <workItem from="1764070486558" duration="313000" />
-      <workItem from="1764074434327" duration="1385000" />
+      <workItem from="1764074434327" duration="1729000" />
+      <workItem from="1764599015684" duration="201000" />
+      <workItem from="1764601818564" duration="156000" />
     </task>
     <servers />
   </component>

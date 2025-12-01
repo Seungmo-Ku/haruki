@@ -170,7 +170,7 @@ export default function ResultsPage() {
     }
     
     return (
-        <div className='w-full h-full p-6 bg-black'>
+        <div className='w-full h-full p-6 bg-black overflow-y-scroll'>
             <div className='flex justify-between items-center mb-6'>
                 <h1 className='text-3xl font-bold text-white'>📊 실시간 집계 결과</h1>
                 <button
@@ -196,6 +196,9 @@ export default function ResultsPage() {
             {/* [NEW] 1번 그래프: 유형별 상세 */}
             <h2 className='text-2xl font-semibold text-white mb-4 border-t mt-6 pt-4'>유형별 상세</h2>
             {renderContent()}
+            <div className='h-[100px]'/>
+            <img src='/qrcode.jpg' alt='QR' className='w-[400px] h-[400px] shrink-0'/>
+            
         </div>
     )
 }
